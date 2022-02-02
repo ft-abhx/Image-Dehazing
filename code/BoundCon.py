@@ -20,4 +20,3 @@ def BoundCon(HazeImg, A, C0, C1, windowSze):
     kernel = np.ones((windowSze, windowSze), np.float)
     transmission = cv2.morphologyEx(transmission, cv2.MORPH_CLOSE, kernel=kernel)
     return(transmission)
-

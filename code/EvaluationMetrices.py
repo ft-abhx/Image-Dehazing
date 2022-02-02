@@ -17,8 +17,8 @@ def SSIM(original, dehazed):
     diff = (diff * 255).astype("uint8")
     return score
 
-original = cv2.imread("../original/8180.jpg")
-dehazed = cv2.imread("../outputImages/result1.jpg")
+original = cv2.imread("../Images/8180.jpg")
+dehazed = cv2.imread("../outputImages/result7.jpg")
 PSNR_value = PSNR(original, dehazed)
 SSIM_score=SSIM(original, dehazed)
 print(f"PSNR value is {round(PSNR_value,4)} dB")
